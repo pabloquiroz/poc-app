@@ -1,0 +1,31 @@
+@use '@angular/material' as mat;
+
+$primary: linear-gradient(
+  45deg,
+  #f58529, /* Orange */
+  #feda77, /* Yellow */
+  #dd2a7b, /* Pink */
+  #8134af, /* Purple */
+  #515bd4  /* Blue */
+);
+$accent: #ff9900;
+$warn: #c4c6d0;
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+:root {
+  @include mat.toolbar-overrides((
+    container-background-color: $primary,
+    container-text-color: white,
+  ));
+}
+
+body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+
+
+
